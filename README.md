@@ -5,7 +5,9 @@
 
 ---
 
-![subcritical_overload](resources\subcritical_overload.png)
+<figure>
+  <img src="resources\subcritical_overload.png" alt="Описание для слепых">
+</figure>
 
 ## Пояснение
 
