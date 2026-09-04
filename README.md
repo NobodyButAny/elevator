@@ -53,13 +53,13 @@ $$
 Путём сопоставления гипотез с матиматическими принципами из теории очередей (подробнее см. Лифт.docx) получена используемая в дальнейшем модель:
 
 $$
-\begin{cases} 
-\Delta Q = A_n - \sigma \cdot \frac{Q_n}{Q_n + P_n} - Q_n \left(1 - e^{-\frac{k(Q + P)}{\mu}}\right) \\ 
+\begin{aligned} 
+&\Delta Q = A_n - \sigma \cdot \frac{Q_n}{Q_n + P_n} - Q_n \left(1 - e^{-\frac{k(Q + P)}{\mu}}\right) \\ 
 
-\Delta P = Q_n \left(1 - e^{-\frac{k(Q + P)}{\mu}}\right) - \sigma \cdot \frac{P_n}{Q_n + P_n} \\
-\sigma = min(Q_n + P_n,\mu) \\
-A_n \sim Poisson(\lambda)
-\end{cases}
+&\Delta P = Q_n \left(1 - e^{-\frac{k(Q + P)}{\mu}}\right) - \sigma \cdot \frac{P_n}{Q_n + P_n} \\
+&\sigma = min(Q_n + P_n,\mu) \\
+&A_n \sim Poisson(\lambda)
+\end{aligned}
 $$
 
 Симуляция с разными наборами параметров успешно показала наличие каскадов. Не вызвыайте лифт, если хотите ходить пешком!
