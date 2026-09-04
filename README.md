@@ -57,7 +57,11 @@ $$
 &\Delta Q = A_n - \sigma \cdot \frac{Q_n}{Q_n + P_n} - Q_n \left(1 - e^{-\frac{k(Q_n + P_n)}{\mu}}\right) \\
 &\Delta P = Q_n \left(1 - e^{-\frac{k(Q_n + P_n)}{\mu}}\right) - \sigma \cdot \frac{P_n}{Q_n + P_n} \\
 &\sigma = \min(Q_n + P_n,\mu) \\
+<<<<<<< HEAD
 &A_n \sim Poisson(\lambda)
+=======
+&A_n \sim \operatorname{Poisson}(\lambda)
+>>>>>>> cd6eec5956446f927c862525f07a697f962a9f22
 \end{aligned}
 $$
 
