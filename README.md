@@ -53,11 +53,10 @@ $$
 Путём сопоставления гипотез с матиматическими принципами из теории очередей (подробнее см. Лифт.docx) получена используемая в дальнейшем модель:
 
 $$
-\begin{aligned} 
-&\Delta Q = A_n - \sigma \cdot \frac{Q_n}{Q_n + P_n} - Q_n \left(1 - e^{-\frac{k(Q + P)}{\mu}}\right) \\ 
-
-&\Delta P = Q_n \left(1 - e^{-\frac{k(Q + P)}{\mu}}\right) - \sigma \cdot \frac{P_n}{Q_n + P_n} \\
-&\sigma = min(Q_n + P_n,\mu) \\
+\begin{aligned}
+&\Delta Q = A_n - \sigma \cdot \frac{Q_n}{Q_n + P_n} - Q_n \left(1 - e^{-\frac{k(Q_n + P_n)}{\mu}}\right) \\
+&\Delta P = Q_n \left(1 - e^{-\frac{k(Q_n + P_n)}{\mu}}\right) - \sigma \cdot \frac{P_n}{Q_n + P_n} \\
+&\sigma = \min(Q_n + P_n,\mu) \\
 &A_n \sim Poisson(\lambda)
 \end{aligned}
 $$
